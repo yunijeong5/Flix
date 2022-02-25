@@ -34,7 +34,8 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
     override fun getItemCount() = movies.size
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val ivPoster = itemView.findViewById<ImageView>(R.id.ivPoster)
+        private val ivPoster = itemView.findViewById<ImageView>(R.id.ivBackdrop)
+        private val ivBackdrop = itemView.findViewById<ImageView>(R.id.ivBackdrop)
         private val tvTitle = itemView.findViewById<TextView>(R.id.tvTitle)
         private val tvOverview = itemView.findViewById<TextView>(R.id.tvOverview)
 
@@ -42,6 +43,7 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
             tvTitle.text = movie.title
             tvOverview.text = movie.overview
             Glide.with(context).load(movie.posterImageUrl).into(ivPoster)
+            Glide.with(context).load(movie.backdropImageUrl).into(ivBackdrop)
 
         }
     }
