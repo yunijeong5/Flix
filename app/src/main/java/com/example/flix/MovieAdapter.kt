@@ -10,6 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.flix.R.drawable.ic_launcher_background
 
 private const val TAG = "MovieAdapter"
 
@@ -49,7 +50,8 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
             else {
                 imageUrl = movie.backdropImageUrl
             }
-            Glide.with(context).load(imageUrl).into(ivPoster)
+            Glide.with(context).load(imageUrl).placeholder(R.drawable.ic_loading_foreground).into(ivPoster)
+//            Glide.with(context).load(imageUrl).placeholder(R.drawable.ic_loading_foreground).into(ivPoster)
 
         }
     }
