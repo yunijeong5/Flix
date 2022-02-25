@@ -39,6 +39,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:ellipsize="end"
         android:maxLines="5"
         android:shadowColor="#99000000"
         android:shadowRadius="10"
