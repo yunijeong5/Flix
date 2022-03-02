@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.32277834525025534" />
         <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.4" />
         <entry key="app/src/main/res/layout-land/item_movie.xml" value="0.38485113835376533" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.4" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="app/src/main/res/layout/item_movie.xml" value="0.4" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_loading.xml" value="0.14074074074074075" />
