@@ -21,13 +21,16 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [x] Add a rounded corners for the images using the Glide transformations. (1 point)
 
 ### App Walkthough GIF
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src="https://github.com/yunijeong5/Flix/blob/master/flix_2_vertical.gif" width=250><br>
 
 ### Notes
-It was fun :D
+- It was fun :D
+- Changed ratings bar from scale 10 to scale 5.
+- Updated ratings bar background color.
 
 Describe any challenges encountered while building the app.
 ---
+I couldn't implement many of the stretch features because midterm season 1 kicked off :D 
 
 ## Flix Part 1
 
