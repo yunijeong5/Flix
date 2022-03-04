@@ -12,7 +12,9 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.example.flix.R.drawable.ic_launcher_background
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation
 
 const val MOVIE_EXTRA = "MOVIE_EXTRA"
 private const val TAG = "MovieAdapter"
@@ -57,7 +59,9 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
             else {
                 imageUrl = movie.backdropImageUrl
             }
-            Glide.with(context).load(imageUrl).placeholder(R.drawable.ic_loading_foreground).into(ivPoster)
+            val radius = 20
+            val margin = 10
+            Glide.with(context).load(imageUrl).centerCrop().transform(RoundedCornersTransformation(radius, margin)) .placeholder(R.drawable.ic_loading_foreground).into(ivPoster)
 //            Glide.with(context).load(imageUrl).placeholder(R.drawable.ic_loading_foreground).into(ivPoster)
 
         }

@@ -43,7 +43,7 @@
         android:ellipsize="end"
         android:maxLines="5"
         android:text="Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero."
-        android:textColor="#e9ecef"
+        android:textColor="@color/light_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivPoster"
